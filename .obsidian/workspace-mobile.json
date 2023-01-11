@@ -1,0 +1,129 @@
+{
+  "main": {
+    "id": "ca0a35683856b683",
+    "type": "split",
+    "children": [
+      {
+        "id": "13bfd76ed60d91de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "37311f906b44f63f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Approximation Algorithms.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d486d46c34198216",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "ee368e41fe4d06ff",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "283e29ee458c44dd",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "c8c7886d92226386",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "f96369c8bf5b4a61",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "53e014c7266944e0",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "a4477488305946b5",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Approximation Algorithms.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "306805fda5d91a97",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Approximation Algorithms.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "b73d0600b001546d",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Approximation Algorithms.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "37311f906b44f63f",
+  "lastOpenFiles": [
+    "Hello.md",
+    "Approximation Algorithms.md"
+  ]
+}
