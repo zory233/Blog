@@ -45,6 +45,32 @@ Venn:
 
 
 # ChatGPT
+
+<details><summary><em>[Click to expand]</em></summary>
+
+<br>
+
+- The optimal values of most hyperparameters are sensitive to the batch size.
+
+Therefore, changing the batch size typically requires starting the tuning
+
+process all over again.
+
+- The hyperparameters that interact most strongly with the batch size, and therefore are most important to tune separately for each batch size, are the optimizer hyperparameters (e.g. learning rate, momentum) and the regularization hyperparameters.
+
+- Keep this in mind when choosing the batch size at the start of a project. If
+
+you need to switch to a different batch size later on, it might be
+
+difficult, time consuming, and expensive to re-tune everything for the new
+
+batch size.
+
+</details>
+
+<details><summary><em>[Click to expand]</em></summary>
+
+<br>
 A reproducing kernel Hilbert space (RKHS) is a Hilbert space of functions that is defined by a positive definite kernel. One of the key properties of an RKHS is that the evaluation functional, $L_x$, defined by $L_x(f) = f(x)$, is a continuous linear functional on the space. The equivalence you mentioned states that the continuity of the evaluation functional at every point in the input space, $\mathcal{X}$, is equivalent to the evaluation functional being a bounded operator on the Hilbert space, $\mathcal{H}$.
 
 The equivalence is true because a linear functional $L$ on a Hilbert space is continuous if and only if it is bounded. To see this, consider the Cauchy-Schwarz inequality:
@@ -58,3 +84,5 @@ Conversely, if $L$ is a bounded operator, then the Cauchy-Schwarz inequality tel
 Thus, we see that continuity of the evaluation functional at every point in the input space is equivalent to the evaluation functional being a bounded operator on the Hilbert space.
 
 It is also important to note that the key condition for $L_x$ being a bounded operator, is that the kernel is a positive definite function, as it gurantees the inner product of the space is well defined and the Cauchy-Schwarz inequality holds.
+
+</details>
