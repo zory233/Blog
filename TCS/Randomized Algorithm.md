@@ -346,7 +346,7 @@ $\mathbb E[X_i]=\sum_{j} 1/(|j-i|+1)=\sum_{j<i} 1/(i-j+1)+\sum_{j>i} 1/(j-i+1)=O
     -   when coin is head, go up, otherwise go left
     -   recall that Pr[X≥0.8n]≤(0.857)^(n/2)
     -   by lemma4, with high proba, we can only go **up** clogn times, let’s assume so
-        -   Pr[#left≥4clogn]≤Pr[X’≥0.8n’]≤(0.857)^(n’/2), where n’=5clogn
+        -   $Pr[\#left \ge 4clogn] \le Pr[X' \ge 0.8n'] \le (0.857)^{n'/2}$, where n’=5clogn
 
 #TODO: n'对应#left这个rv的trial的总数
 

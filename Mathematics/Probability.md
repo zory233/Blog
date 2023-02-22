@@ -54,42 +54,46 @@ Def. (**Continuity of general measure**) $\mu$ is continuous if $\forall \{A_{n}
 Rmk. Notice the closeness under union&intersection gives that $A:=\limsup_{n}A_{n} \in \mathcal{F}$.
 
 Thm. (**Countable additivity implies continuity**)
-Proof. For all convergent sequence $\{A_{n}\}$, which means
-Case1: monotonic An ($A_{n-1} \subset A_{n}$)
-Recall countable additivity (\*), construct $D_{n}=A_{n} \setminus A_{n-1}$, then 
-$$
-\begin{aligned}
-\mu(A)
-&=\mu(\lim_{n \to  \infty} A_n)
-:=\mu(\bigcup_{n=1}^ {\infty} \bigcap_{m=n}^ {\infty} A_{m}) \\
-&=\mu(\bigcup_{n=1}^ {\infty} A_{n})
-=\mu(\bigcup_{n=1}^ {\infty}D_{n})
-\overset{(*)}{=} \sum_{n=1}^ {\infty} \mu(D_{n})\\
-&=\lim_{n \to  \infty} \sum_{i=1}^{n} \mu(D_i)
-=\lim_{n \to  \infty} \mu(\bigcup_{i=1}^{n} D_i)
-=\lim_{n \to  \infty} \mu(A_n)
-\end{aligned}
-$$
-Case2: general An
-Recall $B_{n}=\bigcup_{m=n}^{ \infty} A_{m}, C_{n}=\bigcap_{m=n}^{ \infty} A_m$, clearly $C_{n} \subset A_{n}\subset B_{n}$.
-From case1, we know that 
-$$
-\begin{align*}
-\limsup_{n \to  \infty} A_{n}
-=\lim_{n \to  \infty}\mu( B_{n})
-=\mu(\lim_{n \to  \infty} B_{n})
-=&\mu(B) \\
-=&\mu(A) \\
-=&\mu(C)
-=\mu(\lim_{n \to  \infty} C_{n})
-=\lim_{n \to  \infty}\mu( C_{n})
-\le \liminf_{n \to  \infty} A_{n}
-\end{align*}
-$$
-However, $\limsup_{n \to  \infty} A_{n} \ge \liminf_{n \to  \infty} A_{n}$, 
-therefore $\lim_{n \to  \infty} A_{n} = \limsup_{n \to  \infty} A_{n} = \liminf_{n \to  \infty} A_{n}=\mu(A)$.
+<details>
+  <summary>Proof</summary>
 
-Conclusion: $\mu$ is a continuous set function.
+    Proof. For all convergent sequence $\{A_{n}\}$, which means
+    Case1: monotonic An ($A_{n-1} \subset A_{n}$)
+    Recall countable additivity (\*), construct $D_{n}=A_{n} \setminus A_{n-1}$, then 
+    $$
+    \begin{aligned}
+    \mu(A)
+    &=\mu(\lim_{n \to  \infty} A_n)
+    :=\mu(\bigcup_{n=1}^ {\infty} \bigcap_{m=n}^ {\infty} A_{m}) \\
+    &=\mu(\bigcup_{n=1}^ {\infty} A_{n})
+    =\mu(\bigcup_{n=1}^ {\infty}D_{n})
+    \overset{(*)}{=} \sum_{n=1}^ {\infty} \mu(D_{n})\\
+    &=\lim_{n \to  \infty} \sum_{i=1}^{n} \mu(D_i)
+    =\lim_{n \to  \infty} \mu(\bigcup_{i=1}^{n} D_i)
+    =\lim_{n \to  \infty} \mu(A_n)
+    \end{aligned}
+    $$
+    Case2: general An
+    Recall $B_{n}=\bigcup_{m=n}^{ \infty} A_{m}, C_{n}=\bigcap_{m=n}^{ \infty} A_m$, clearly $C_{n} \subset A_{n}\subset B_{n}$.
+    From case1, we know that 
+    $$
+    \begin{align*}
+    \limsup_{n \to  \infty} A_{n}
+    =\lim_{n \to  \infty}\mu( B_{n})
+    =\mu(\lim_{n \to  \infty} B_{n})
+    =&\mu(B) \\
+    =&\mu(A) \\
+    =&\mu(C)
+    =\mu(\lim_{n \to  \infty} C_{n})
+    =\lim_{n \to  \infty}\mu( C_{n})
+    \le \liminf_{n \to  \infty} A_{n}
+    \end{align*}
+    $$
+    However, $\limsup_{n \to  \infty} A_{n} \ge \liminf_{n \to  \infty} A_{n}$, 
+    therefore $\lim_{n \to  \infty} A_{n} = \limsup_{n \to  \infty} A_{n} = \liminf_{n \to  \infty} A_{n}=\mu(A)$.
+    
+    Conclusion: $\mu$ is a continuous set function.
+</details>
 
 Prop. (**Finite additivity + continuity <=> countable additivity**)
 Proof. (=>) 
@@ -104,7 +108,6 @@ $$
 $$
 
 E.g. $\Omega= \mathbb{R}$, $\mathcal{F}$ is some $\sigma$-field including all intervals. If we know $\text{I\kern-0.15em P}([a,b])$ for all $[a,b] \subset \mathbb{R}$, then $$\lim_{n \to  \infty} \text{I\kern-0.15em P}([a+ \frac{1}{n}, b- \frac{1}{n} ])=\text{I\kern-0.15em P}(\lim_{n \to  \infty}  [a+ \frac{1}{n}, b- \frac{1}{n} ])=\text{I\kern-0.15em P}((a,b))$$, which uniquely extend all open intervals.
-
 
 ## 1.3 Conditional probability, independence
 Rmk. "B has occurred" means $\omega \in B$. We may consider B as another sample space.
