@@ -57,48 +57,48 @@ Thm. (**Countable additivity implies continuity**)
 <details>
   <summary>Proof</summary>
 
-    Proof. For all convergent sequence $\{A_{n}\}$, which means
-    Case1: monotonic An ($A_{n-1} \subset A_{n}$)
-    Recall countable additivity (\*), construct $D_{n}=A_{n} \setminus A_{n-1}$, then 
-    $$
-    \begin{aligned}
-    \mu(A)
-    &=\mu(\lim_{n \to  \infty} A_n)
-    :=\mu(\bigcup_{n=1}^ {\infty} \bigcap_{m=n}^ {\infty} A_{m}) \\
-    &=\mu(\bigcup_{n=1}^ {\infty} A_{n})
-    =\mu(\bigcup_{n=1}^ {\infty}D_{n})
-    \overset{(*)}{=} \sum_{n=1}^ {\infty} \mu(D_{n})\\
-    &=\lim_{n \to  \infty} \sum_{i=1}^{n} \mu(D_i)
-    =\lim_{n \to  \infty} \mu(\bigcup_{i=1}^{n} D_i)
-    =\lim_{n \to  \infty} \mu(A_n)
-    \end{aligned}
-    $$
-    Case2: general An
-    Recall $B_{n}=\bigcup_{m=n}^{ \infty} A_{m}, C_{n}=\bigcap_{m=n}^{ \infty} A_m$, clearly $C_{n} \subset A_{n}\subset B_{n}$.
-    From case1, we know that 
-    $$
-    \begin{align*}
-    \limsup_{n \to  \infty} A_{n}
-    =\lim_{n \to  \infty}\mu( B_{n})
-    =\mu(\lim_{n \to  \infty} B_{n})
-    =&\mu(B) \\
-    =&\mu(A) \\
-    =&\mu(C)
-    =\mu(\lim_{n \to  \infty} C_{n})
-    =\lim_{n \to  \infty}\mu( C_{n})
-    \le \liminf_{n \to  \infty} A_{n}
-    \end{align*}
-    $$
-    However, $\limsup_{n \to  \infty} A_{n} \ge \liminf_{n \to  \infty} A_{n}$, 
-    therefore $\lim_{n \to  \infty} A_{n} = \limsup_{n \to  \infty} A_{n} = \liminf_{n \to  \infty} A_{n}=\mu(A)$.
-    
-    Conclusion: $\mu$ is a continuous set function.
+Proof. For all convergent sequence $\{A_{n}\}$, which means
+Case1: monotonic An ($A_{n-1} \subset A_{n}$)
+Recall countable additivity (\*), construct $D_{n}=A_{n} \setminus A_{n-1}$, then 
+$$
+\begin{aligned}
+\mu(A)
+&=\mu(\lim_{n \to  \infty} A_n)
+:=\mu(\bigcup_{n=1}^ {\infty} \bigcap_{m=n}^ {\infty} A_{m}) \\
+&=\mu(\bigcup_{n=1}^ {\infty} A_{n})
+=\mu(\bigcup_{n=1}^ {\infty}D_{n})
+\overset{(*)}{=} \sum_{n=1}^ {\infty} \mu(D_{n})\\
+&=\lim_{n \to  \infty} \sum_{i=1}^{n} \mu(D_i)
+=\lim_{n \to  \infty} \mu(\bigcup_{i=1}^{n} D_i)
+=\lim_{n \to  \infty} \mu(A_n)
+\end{aligned}
+$$
+Case2: general An
+Recall $B_{n}=\bigcup_{m=n}^{ \infty} A_{m}, C_{n}=\bigcap_{m=n}^{ \infty} A_m$, clearly $C_{n} \subset A_{n}\subset B_{n}$.
+From case1, we know that 
+$$
+\begin{align*}
+\limsup_{n \to  \infty} A_{n}
+=\lim_{n \to  \infty}\mu( B_{n})
+=\mu(\lim_{n \to  \infty} B_{n})
+=&\mu(B) \\
+=&\mu(A) \\
+=&\mu(C)
+=\mu(\lim_{n \to  \infty} C_{n})
+=\lim_{n \to  \infty}\mu( C_{n})
+\le \liminf_{n \to  \infty} A_{n}
+\end{align*}
+$$
+However, $\limsup_{n \to  \infty} A_{n} \ge \liminf_{n \to  \infty} A_{n}$, 
+therefore $\lim_{n \to  \infty} A_{n} = \limsup_{n \to  \infty} A_{n} = \liminf_{n \to  \infty} A_{n}=\mu(A)$.
+
+Conclusion: $\mu$ is a continuous set function.
 </details>
 
 Prop. (**Finite additivity + continuity <=> countable additivity**)
 Proof. (=>) 
 Recall continuity: $\forall \{A_{n}\}, A_{n} \to A, n \to  \infty \longrightarrow \lim_{n \to  \infty} \mu(A_{n}) = \mu(\lim_{n \to  \infty} A_n)=\mu(A)$
-(countable additivity) If $A_{1}, A_{2}, \dots$ is a collection of disjoint members of $\mathcal{F}$, then 
+and (countable additivity) If $A_{1}, A_{2}, \dots$ is a collection of disjoint members of $\mathcal{F}$, then 
 $$
 \mu(\bigcup_{i=1}^ {\infty} A_{i})
 =\mu( \lim_{n \to  \infty} \bigcup_{i=1}^{n}A_{i}  )
