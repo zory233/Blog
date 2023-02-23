@@ -60,6 +60,7 @@ Thm. (**Countable additivity implies continuity**)
 Proof. For all convergent sequence $\{A_{n}\}$, which means
 Case1: monotonic An ($A_{n-1} \subset A_{n}$)
 Recall countable additivity (\*), construct $D_{n}=A_{n} \setminus A_{n-1}$, then 
+
 $$
 \begin{aligned}
 \mu(A)
@@ -73,9 +74,12 @@ $$
 =\lim_{n \to  \infty} \mu(A_n)
 \end{aligned}
 $$
+
 Case2: general An
-Recall $B_{n}=\bigcup_{m=n}^{ \infty} A_{m}, C_{n}=\bigcap_{m=n}^{ \infty} A_m$, clearly $C_{n} \subset A_{n}\subset B_{n}$.
+Recall $B_{n}=\bigcup_{m=n}^{ \infty} A_{m}, C_{n}=\bigcap_{m=n}^{ \infty} A_m$, 
+clearly $C_{n} \subset A_{n}\subset B_{n}$.
 From case1, we know that 
+
 $$
 \begin{align*}
 \limsup_{n \to  \infty} A_{n}
@@ -89,6 +93,7 @@ $$
 \le \liminf_{n \to  \infty} A_{n}
 \end{align*}
 $$
+
 However, $\limsup_{n \to  \infty} A_{n} \ge \liminf_{n \to  \infty} A_{n}$, 
 therefore $\lim_{n \to  \infty} A_{n} = \limsup_{n \to  \infty} A_{n} = \liminf_{n \to  \infty} A_{n}=\mu(A)$.
 
