@@ -61,8 +61,7 @@ Proof. For all convergent sequence $\{A_{n}\}$, which means
 Case1: monotonic An ($A_{n-1} \subset A_{n}$)
 Recall countable additivity (\*), construct $D_{n}=A_{n} \setminus A_{n-1}$, then 
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \mu(A)
 &=\mu(\lim_{n \to  \infty} A_n)
 :=\mu(\bigcup_{n=1}^ {\infty} \bigcap_{m=n}^ {\infty} A_{m}) \\
@@ -72,16 +71,14 @@ $$
 &=\lim_{n \to  \infty} \sum_{i=1}^{n} \mu(D_i)
 =\lim_{n \to  \infty} \mu(\bigcup_{i=1}^{n} D_i)
 =\lim_{n \to  \infty} \mu(A_n)
-\end{aligned}
-$$
+\end{aligned}$$
 
 Case2: general An
 Recall $B_{n}=\bigcup_{m=n}^{ \infty} A_{m}, C_{n}=\bigcap_{m=n}^{ \infty} A_m$, 
 clearly $C_{n} \subset A_{n}\subset B_{n}$.
 From case1, we know that 
 
-$$
-\begin{align*}
+$$\begin{align*}
 \limsup_{n \to  \infty} A_{n}
 =\lim_{n \to  \infty}\mu( B_{n})
 =\mu(\lim_{n \to  \infty} B_{n})
@@ -91,8 +88,7 @@ $$
 =\mu(\lim_{n \to  \infty} C_{n})
 =\lim_{n \to  \infty}\mu( C_{n})
 \le \liminf_{n \to  \infty} A_{n}
-\end{align*}
-$$
+\end{align*}$$
 
 However, $\limsup_{n \to  \infty} A_{n} \ge \liminf_{n \to  \infty} A_{n}$, 
 therefore $\lim_{n \to  \infty} A_{n} = \limsup_{n \to  \infty} A_{n} = \liminf_{n \to  \infty} A_{n}=\mu(A)$.
