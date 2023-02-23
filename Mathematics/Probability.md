@@ -54,14 +54,12 @@ Def. (**Continuity of general measure**) $\mu$ is continuous if $\forall \{A_{n}
 Rmk. Notice the closeness under union&intersection gives that $A:=\limsup_{n}A_{n} \in \mathcal{F}$.
 
 Thm. (**Countable additivity implies continuity**)
-<details>
-  <summary>Proof</summary>
-
 Proof. For all convergent sequence $\{A_{n}\}$, which means
 Case1: monotonic An ($A_{n-1} \subset A_{n}$)
 Recall countable additivity (\*), construct $D_{n}=A_{n} \setminus A_{n-1}$, then 
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mu(A)
 &=\mu(\lim_{n \to  \infty} A_n)
 :=\mu(\bigcup_{n=1}^ {\infty} \bigcap_{m=n}^ {\infty} A_{m}) \\
@@ -88,13 +86,13 @@ $$\begin{align*}
 =\mu(\lim_{n \to  \infty} C_{n})
 =\lim_{n \to  \infty}\mu( C_{n})
 \le \liminf_{n \to  \infty} A_{n}
-\end{align*}$$
+\end{align*}
+$$
 
 However, $\limsup_{n \to  \infty} A_{n} \ge \liminf_{n \to  \infty} A_{n}$, 
 therefore $\lim_{n \to  \infty} A_{n} = \limsup_{n \to  \infty} A_{n} = \liminf_{n \to  \infty} A_{n}=\mu(A)$.
 
 Conclusion: $\mu$ is a continuous set function.
-</details>
 
 Prop. (**Finite additivity + continuity <=> countable additivity**)
 Proof. (=>) 
