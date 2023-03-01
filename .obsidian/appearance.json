@@ -1,4 +1,7 @@
 {
   "accentColor": "",
-  "theme": "moonstone"
+  "baseFontSize": 16,
+  "theme": "moonstone",
+  "textFontFamily": "PT Serif",
+  "monospaceFontFamily": "Times New Roman"
 }
